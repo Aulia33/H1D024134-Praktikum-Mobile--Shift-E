@@ -97,7 +97,7 @@ fun LayoutTentangApapun(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(16.dp))
 
         Text(
-            text = "Aplikasi Apapun merupakan aplikasi yang dirancang untuk membantu pengguna dalam mengelola dan memperoleh informasi dengan lebih mudah.",
+            text = "Aplikasi Apapun adalah platform yang mewadahi produk lokal UMKM di wilayah Kabupaten Purbalingga, Jawa Tengah.",
             fontSize = 16.sp,
             modifier = Modifier.padding(horizontal = 16.dp)
         )
@@ -117,7 +117,7 @@ fun LayoutTentangApapun(modifier: Modifier = Modifier) {
             )
 
             Text(
-                text = "Memberikan kemudahan bagi pengguna",
+                text = "Memajukan UMKM Lokal",
                 modifier = Modifier.weight(2f)
             )
         }
