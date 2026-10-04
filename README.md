@@ -55,3 +55,16 @@ https://drive.google.com/file/d/1lZcpY6r5kA8fW1bi4KAl6Gi4eQK3tLTJ/view?usp=drive
 
 **Kesimpulan Praktikum:**
 Praktikum pertemuan 4 berhasil mengimplementasikan beberapa fitur aplikasi Android menggunakan Kotlin dan Jetpack Compose, seperti Daftar Product, Detail Product, Hubungi Kami.
+
+---
+
+## 📝 Tugas Pertemuan 5
+**Tanggal**: Rabu, 30 September 2026
+
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/8fd979e7-5158-4b01-8656-16238142994a" />
+<img width="716" height="1600" alt="image" src="https://github.com/user-attachments/assets/c5745088-8de7-4ee3-bbd9-71e1b76907be" />
+
+
+
+**Kesimpulan Praktikum:**
+Praktikum pertemuan 5 berhasil menerapkan konsep Networking & Architecture pada aplikasi Android menggunakan Kotlin dan Jetpack Compose. Pada praktikum ini, aplikasi dikembangkan dengan menerapkan ViewModel dan UI State untuk mengelola data serta kondisi tampilan, termasuk proses Loading, Error, dan Success. Selain itu, aplikasi mulai diintegrasikan dengan proses pengambilan data melalui jaringan/API sehingga pengelolaan data menjadi lebih terstruktur dan sesuai dengan konsep arsitektur aplikasi Android.
