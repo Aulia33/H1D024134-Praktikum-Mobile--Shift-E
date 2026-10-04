@@ -1,21 +1,19 @@
 package com.example.apapun
 
 import android.os.Bundle
-
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.runtime.Composable
-
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-
 import com.example.apapun.ui.screen.DaftarProductScreen
 import com.example.apapun.ui.screen.DetailProductScreen
 import com.example.apapun.ui.screen.HubungiKamiScreen
 import com.example.apapun.ui.theme.ApapunTheme
+import com.example.apapun.ui.viewmodel.ProductViewModel
 
 class HomeActivity : ComponentActivity() {
 
@@ -24,19 +22,19 @@ class HomeActivity : ComponentActivity() {
 
         setContent {
             ApapunTheme {
-
                 val navController = rememberNavController()
+                val productViewModel: ProductViewModel = viewModel()
 
                 NavHost(
                     navController = navController,
                     startDestination = "daftar_produk"
                 ) {
-
                     composable(
                         route = "daftar_produk"
                     ) {
                         DaftarProductScreen(
-                            navController = navController
+                            navController = navController,
+                            viewModel = productViewModel
                         )
                     }
 
@@ -48,13 +46,13 @@ class HomeActivity : ComponentActivity() {
                             }
                         )
                     ) { backStackEntry ->
-
                         val productId =
                             backStackEntry.arguments?.getInt("productId") ?: 0
 
                         DetailProductScreen(
                             productId = productId,
-                            navController = navController
+                            navController = navController,
+                            viewModel = productViewModel
                         )
                     }
 
